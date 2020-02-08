@@ -12,6 +12,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        Log.d("TAG", "dfdg@jhj".AviationFormat())
+        Log.d("TAG1", "0492644".isValidIranianNationalCode().toString())
         //if(!this.isInternetAvailable()){
            // this.showToast("No Internet access", Toast.LENGTH_LONG)
         //}
