@@ -4,6 +4,7 @@ import android.content.Intent
 import android.media.Image
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import kotlinx.android.synthetic.main.activity_main.*
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
         Log.d("TAG", "dfdg@jhj".AviationFormat())
         Log.d("TAG1", "0492644".isValidIranianNationalCode().toString())
         //if(!this.isInternetAvailable()){
@@ -46,7 +48,8 @@ class MainActivity : AppCompatActivity() {
 
         btnMenu.setOnClickListener{
             try {
-                drawer.openDrawer(GravityCompat.START)
+
+                drawer.openDrawer(GravityCompat.END)
 
             }
             catch (e:Exception){

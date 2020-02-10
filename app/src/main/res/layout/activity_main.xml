@@ -15,16 +15,13 @@
 
         <ImageButton
             android:id="@+id/btnMenu"
-            android:layout_width="50dp"
-            android:layout_height="70dp"
-            android:layout_margin="6dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="3dp"
             android:background="@android:color/transparent"
-            android:text="="
             android:src="@drawable/icons8"
             android:textStyle="bold"
-            android:textColor="#0846BE"
-            android:layout_gravity="left"
-            android:textSize="50sp">
+            android:layout_gravity="right">
 
         </ImageButton>
         <ir.airport.kotlinapplication.FontTextview
@@ -55,7 +52,7 @@
         android:layout_width="300dp"
         android:layout_height="match_parent"
         android:background="#FFF"
-        android:layout_gravity="left"
+        android:layout_gravity="right"
         android:orientation="vertical">
 
         <ImageView
@@ -69,8 +66,9 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
             android:id="@+id/recyclermenu"
-            android:layout_gravity="left"
+            android:layout_gravity="right"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layoutDirection="rtl"
             android:orientation="vertical">
 
         </androidx.recyclerview.widget.RecyclerView>
