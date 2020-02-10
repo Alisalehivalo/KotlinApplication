@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="iconSearch">&#xf349;</string>
+    <string name="iconDown">&#xf35d;</string>
+    <string name="iconUp">&#xf360;</string>
+    <string name="iconTrash">&#xf1c0;</string>
+    <string name="iconBack">&#xf054;</string>
+    <string name="iconLongNext">&#xf30d;</string>
+    <string name="iconLoaction">&#xf34e;</string>
+    <string name="iconAddLoaction">&#xf651;</string>
+    <string name="iconMap">&#xf5f8;</string>
+    <string name="iconCreditCard">&#xf19b;</string>
+    <string name="iconCreditCardPlus">&#xf675;</string>
+    <string name="iconGPS">&#xf1a4;</string>
+    <string name="iconExit">&#xf206;</string>
+
+    <string name="iconClose">&#xf156;</string>
+    <string name="iconCheck">&#xf5e0;</string>
+    <string name="iconDiscount">&#xf4fd;</string>
+    <string name="iconAcount">&#xf004;</string>
+    <string name="iconAcountPlus">&#xf014;</string>
+    <string name="iconEmail">&#xf1ee;</string>
+    <string name="iconMobile">&#xf11d;</string>
+    <string name="iconMultipleAccount">&#xf00e;</string>
+    <string name="iconMenu">&#xf35c;</string>
+    <string name="iconCall">&#xf007;</string>
+    <string name="iconAbout">&#xf5d6;</string>
+    <string name="iconShare">&#xf497;</string>
+    <string name="iconTransaction">&#xf619;</string>
+    <string name="iconOrederHistory">&#xf14e;</string>
+    <string name="iconPlus">&#xf415;</string>
+    <string name="iconMinus">&#xf374;</string>
+    <string name="iconDollar">&#xf1b3;</string>
+    <string name="iconMessage">&#xf366;</string>
+    <string name="iconOpenMessage">&#xf5ef;</string>
+    <string name="iconMessageDown">&#xf35d;</string>
+    <string name="iconMessageUp">&#xf360;</string>
+    <string name="iconPhone">&#xf3f2;</string>
+    <string name="iconWeb">&#xf1e7;</string>
+    <string name="iconNumeric">&#xf3a0;</string>
+    <string name="iconHome">&#xf6a0;</string>
+    <string name="iconDesc">&#xf36a;</string>
+    <string name="iconTry">&#xf459;</string>
+    <string name="iconEdit">&#xf3eb;</string>
+    <string name="iconNoRead">&#xf0c0;</string>
+    <string name="iconRead">&#xf0c1;</string>
+    <string name="iconArrowDown">&#xf045;</string>
+    <string name="iconArrowUp">&#xf05d;</string>
+
+</resources>

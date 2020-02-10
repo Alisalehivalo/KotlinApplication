@@ -27,6 +27,27 @@
             android:textSize="50sp">
 
         </ImageButton>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="زمان جاری"
+            android:textSize="35sp"
+            android:layout_gravity="center"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textColor="#EE0A0A"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:id="@+id/currentTime"/>
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_width="400dp"
+            android:layout_height="300dp"
+            android:id="@+id/imgDay"
+            android:layout_gravity="center"/>
 
     </LinearLayout>
 
@@ -53,6 +74,7 @@
             android:orientation="vertical">
 
         </androidx.recyclerview.widget.RecyclerView>
+
 
     </LinearLayout>
 
