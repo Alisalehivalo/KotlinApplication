@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         //if(!this.isInternetAvailable()){
            // this.showToast("No Internet access", Toast.LENGTH_LONG)
         //}
-        val img:Image
+        //val img:Image
         val currentTime1: String =
             SimpleDateFormat("HH:mm", Locale.getDefault()).format(Date())
             //val currectTime1:Date=Calendar.getInstance().getTime();
@@ -32,7 +32,9 @@ class MainActivity : AppCompatActivity() {
             SimpleDateFormat("HH", Locale.getDefault()).format(Date())
         //val currectTime1:Date=Calendar.getInstance().getTime();
         currentTime.text=currentTime1
+
         Log.d("TAG",hour)
+
         if (hour=="00"||hour=="01"||hour=="02"||hour=="03"||hour=="04"||hour=="05"||hour=="06"){
            imgDay.setImageResource(getResources().getIdentifier("mid", "drawable", getPackageName()))
         }else if (hour=="07"||hour=="08"||hour=="09"||hour=="10"||hour=="11"){

@@ -10,7 +10,7 @@ import ir.airport.kotlinapplication.pojo.AladhanResponseModel
 import kotlinx.android.synthetic.main.activity_calender.*
 import retrofit2.*
 import retrofit2.converter.gson.GsonConverterFactory
-
+// View
 class CalenderActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {

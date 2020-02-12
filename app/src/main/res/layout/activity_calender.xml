@@ -57,9 +57,10 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:orientation="horizontal"
         android:layout_marginTop="20dp"
-        android:layout_gravity="center">
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -77,7 +78,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -95,11 +97,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :اذان صبح"
+            android:text=" :اذان صبح   "
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
@@ -113,11 +116,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_marginLeft="50dp"
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :امساک"
+            android:text="  :امساک"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
@@ -131,11 +135,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_marginLeft="39dp"
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :اذان ظهر"
+            android:text="    :اذان ظهر"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
@@ -147,13 +152,14 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
+        android:layout_marginLeft="30dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :اذان عصر"
+            android:text="   :اذان عصر"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
@@ -165,13 +171,14 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="wrap_content"
+        android:layout_marginLeft="28dp"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :اذان مغرب"
+            android:text="  اذان مغرب"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
@@ -184,12 +191,13 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :اذان عشا"
+            android:text="   :اذان عشا"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
@@ -202,12 +210,13 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
         android:orientation="horizontal"
-        android:layout_gravity="center">
+        android:layout_gravity="left">
         <ir.airport.kotlinapplication.FontTextview
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text=" :نیمه شب"
+            android:text=" :نیمه شب   "
             android:textStyle="bold"
             android:textSize="20sp"/>
         <ir.airport.kotlinapplication.FontTextview
