@@ -2,14 +2,25 @@ package ir.airport.kotlinapplication.MVP
 
 import kotlinx.android.synthetic.main.activity_main.*
 
-class Presenter (private val view: Contract.View) : Contract.Presenter {
+class Presenter (private val view: Contract.View) : Contract.Presenter{
 
-    private val model = Model(this)
-    val hour1 = model.ShowCurrentHour()
-    override fun Set(hour1: String) {
-
+    private val model =Model(this)
+//2. Data az fun getCityCountry view daryaft mishe va be fun setAdhan dar model pass dade mishavad
+    override fun showAdhan(){
+        val (city,country)=view.getCityCountry()
+        return model.setAdhan(city,country)
 
     }
+    //4.1error Error az fun setAdhan model daryaft va be fun showError dar view pass dade mishavad
+    override fun receiveError(t:String){
+        return view.showError(t)
+    }
+
+    //5.1show Data daryafti az fun setAdhan az model daryaft va be marhale 5.2show fun setTiming dar view pass dade mishe
+    override fun getAdhan(sunRise:String, sunSet:String){
+        view.setTiming(sunRise,sunSet)
+    }
+
 
 
 }

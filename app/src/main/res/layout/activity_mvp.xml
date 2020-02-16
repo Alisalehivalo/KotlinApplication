@@ -5,27 +5,94 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:layout_gravity="center|top"
     tools:context=".MVP.MVPActivity">
     <ir.airport.kotlinapplication.FontTextview
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="زمان جاری"
+        android:layout_marginTop="10dp"
+        android:text="اوقات شرعی"
         android:textSize="35sp"
-        android:layout_gravity="center"/>
-    <ir.airport.kotlinapplication.FontTextview
-        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25sp"
-        android:textColor="#EE0A0A"
-        android:textStyle="bold"
         android:layout_gravity="center"
-        android:id="@+id/currentTime1"/>
-    <ImageView
+        android:orientation="horizontal">
+        <ir.airport.kotlinapplication.FontTextview
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" :شهر"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityMvp"
+            android:hint="City"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text=" :کشور"/>
+        <EditText
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryMvp"
+            android:hint="Country"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="جستجو"
+        android:layout_gravity="center"
+        android:background="#FFC107"
+        android:id="@+id/btnSearch"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:orientation="horizontal"
         android:layout_marginTop="20dp"
-        android:layout_width="400dp"
-        android:layout_height="300dp"
-        android:id="@+id/imgDay1"
-        android:layout_gravity="center"/>
+        android:layout_gravity="left">
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" :طلوع آفتاب"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sunRiseMvp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" :غروب آفتاب"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/sunSetMvp"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
 
 </LinearLayout>
