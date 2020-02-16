@@ -39,7 +39,14 @@ class Model(val presenter: Contract.Presenter) {
                 {
                     var sunrise:String=response.body()?.data?.timings?.Sunrise.toString()
                     var sunset:String=response.body()?.data?.timings?.Sunset.toString()
-                    presenter.getAdhan(sunrise,sunset)
+                    var fajr1:String=response.body()?.data?.timings?.Fajr.toString()
+                    var imsak1:String=response.body()?.data?.timings?.Imsak.toString()
+                    var dhuhr1:String=response.body()?.data?.timings?.Dhuhr.toString()
+                    var asr1:String=response.body()?.data?.timings?.Asr.toString()
+                    var maghrib1:String=response.body()?.data?.timings?.Maghrib.toString()
+                    var isha1:String=response.body()?.data?.timings?.Isha.toString()
+                    var mid1:String=response.body()?.data?.timings?.Midnight.toString()
+                    presenter.getAdhan(sunrise,sunset,fajr1,imsak1,maghrib1,isha1,dhuhr1,mid1,asr1)
 
                 }
 

@@ -17,8 +17,9 @@ class Presenter (private val view: Contract.View) : Contract.Presenter{
     }
 
     //5.1show Data daryafti az fun setAdhan az model daryaft va be marhale 5.2show fun setTiming dar view pass dade mishe
-    override fun getAdhan(sunRise:String, sunSet:String){
-        view.setTiming(sunRise,sunSet)
+    override fun getAdhan(sunRise:String, sunSet:String,fajr:String,imsak:String,
+                          maghrib:String,isha:String,zuhr:String,midNight:String,asr:String){
+        view.setTiming(sunRise,sunSet,fajr,imsak,maghrib,isha,zuhr,midNight, asr)
     }
 
 

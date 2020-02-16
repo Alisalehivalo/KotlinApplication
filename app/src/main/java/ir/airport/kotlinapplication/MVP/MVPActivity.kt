@@ -26,9 +26,17 @@ class MVPActivity: AppCompatActivity(), Contract.View {
     }
 
     //5.2show Data daryafti az marhale 5.1show fun getAdhan dar presenter daryaft va be user neshoon dade mishe
-    override fun setTiming(sunRise:String, sunSet:String){
+    override fun setTiming(sunRise:String, sunSet:String,fajr:String,imsak:String,
+                           maghrib:String,isha:String,zuhr:String,midNight:String,asr:String){
         sunRiseMvp.text=sunRise
         sunSetMvp.text=sunSet
+        fajrMvp.text=fajr
+        imsakMvp.text=imsak
+        maghribMvp.text=maghrib
+        ishaMvp.text=isha
+        dhuhrMvp.text=zuhr
+        midNightMvp.text=midNight
+        asrMvp.text=asr
     }
     //4.2error Error daryafti az marhale 4.1error fun receiveError az presenter daryaft va be shekl Toast neshoon dade mishe
     override fun showError(t:String){
