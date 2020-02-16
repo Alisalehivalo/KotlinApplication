@@ -5,7 +5,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 class Presenter (private val view: Contract.View) : Contract.Presenter{
 
     private val model =Model(this)
-//2. Data az fun getCityCountry view daryaft mishe va be fun setAdhan dar model pass dade mishavad
+//1. Data az fun getCityCountry view daryaft mishe va be fun setAdhan dar model pass dade mishavad
     override fun showAdhan(){
         val (city,country)=view.getCityCountry()
         return model.setAdhan(city,country)

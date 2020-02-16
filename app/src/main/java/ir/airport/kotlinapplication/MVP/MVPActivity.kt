@@ -14,11 +14,12 @@ class MVPActivity: AppCompatActivity(), Contract.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_mvp)
         btnSearch.setOnClickListener( ){
+           // Noghte Shoroo fun showAdhan dar presenter seda zade mishavad
             presenter.showAdhan()
         }
 
     }
-    //1. Data City va Country Daryaft mishe va be fun showAdhan dar presenter pass dade mishavad
+    //2. Data City va Country Daryaft mishe va be fun showAdhan dar presenter pass dade mishavad
     override fun getCityCountry():Pair<String,String>{
         val city=cityMvp.text.toString()
         val country=countryMvp.text.toString()
