@@ -1,10 +1,8 @@
 package ir.airport.kotlinapplication
 
 import android.content.Intent
-import android.media.Image
 import android.os.Bundle
 import android.util.Log
-import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import ir.airport.kotlinapplication.MVP.MVPActivity

@@ -12,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MVP.MVPActivity">
-
-        </activity>
-        <activity android:name=".CalenderActivity"></activity>
+        <activity android:name=".MVVM.MvvmViewActivity"></activity>
+        <activity android:name=".MVVM.Mvvm2Activity" />
+        <activity android:name=".MVVM.MvvmActivity" />
+        <activity android:name=".MVP.MVPActivity" />
+        <activity android:name=".CalenderActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
