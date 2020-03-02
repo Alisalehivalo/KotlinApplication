@@ -9,5 +9,6 @@ interface observableInterface {
     @GET("timingsByCity")
     fun getTimings(@Query("city")city: String,
                    @Query("country")country: String,
-                   @Query("method")method: Int): Observable<AladhanResponseModel>
+                   @Query("method")method: Int)
+                   : Observable<AladhanResponseModel>
 }

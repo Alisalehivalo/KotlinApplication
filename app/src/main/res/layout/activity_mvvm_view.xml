@@ -1,9 +1,247 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center"
+    android:background="@drawable/mekka2"
     tools:context=".MVVM.MvvmViewActivity">
+    <ir.airport.kotlinapplication.TitrTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="اوقات شرعی"
+        android:textSize="35sp"
+        android:textColor="#FAE31D"
+        android:layout_gravity="center"
+        android:textStyle="bold"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ir.airport.kotlinapplication.FontTextview
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="#0D26B4"
+            android:layout_height="wrap_content"
+            android:text=" :شهر"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cityMvvm"
+            android:hint="شهر"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#0D26B4"
+            android:text=" :کشور"/>
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/countryMvvm"
+            android:hint="کشور"
+            android:textColor="#FFF"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="جستجو"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:id="@+id/btnS"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+        <ProgressBar
+            style="@android:style/Widget.Material.Light.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/progressBar" />
+
+<LinearLayout
+    android:layout_width="350dp"
+    android:layout_height="200dp"
+    android:layout_marginTop="20dp"
+    android:layout_gravity="center_horizontal|center_vertical"
+    android:orientation="vertical"
+    android:background="@drawable/border">
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal|center_vertical">
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":امساک"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imsakMvvm"
+            android:layout_marginRight="30dp"
+
+            android:textStyle="bold"
+            android:textColor="#8B0404"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":اذان صبح"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fajrMvvm"
+            android:textColor="#8B0404"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+
+        android:layout_gravity="center_horizontal">
+
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=":طلوع آفتاب"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+            android:id="@+id/sunRiseMvvm"
+            android:textColor="#8B0404"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text=":اذان ظهر"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+
+
+            android:layout_height="wrap_content"
+            android:textColor="#8B0404"
+            android:id="@+id/dhuhrMvvm"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":اذان عصر"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:textColor="#8B0404"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/asrMvvm"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":غروب آفتاب"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8B0404"
+            android:id="@+id/sunSetMvvm"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":اذان مغرب"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:textColor="#8B0404"
+            android:layout_marginRight="30dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/maghribMvvm"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":اذان عشا"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ishaMvvm"
+            android:textColor="#8B0404"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":نیمه شب"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <ir.airport.kotlinapplication.FontTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#8B0404"
+            android:id="@+id/midNightMvvm"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+</LinearLayout>
