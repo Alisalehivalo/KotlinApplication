@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
+import ir.airport.kotlinapplication.AladhanwithDagger2.MVVMDaggerActivity
 import ir.airport.kotlinapplication.MVP.MVPActivity
 import ir.airport.kotlinapplication.MVVM.MvvmViewActivity
 import kotlinx.android.synthetic.main.activity_main.*
@@ -61,7 +62,7 @@ class MainActivity : AppCompatActivity() {
             var clickListener: (String)->Unit={
                this.showToast("Show "+ it+ " Activity")
                 if (it=="اوقات شرعی"){
-                    val i = Intent(this, MvvmViewActivity::class.java)
+                    val i = Intent(this, MVVMDaggerActivity::class.java)
                     startActivity(i)
                 }
 

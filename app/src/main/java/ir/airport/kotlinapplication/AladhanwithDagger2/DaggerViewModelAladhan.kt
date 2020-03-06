@@ -1,4 +1,4 @@
-package ir.airport.kotlinapplication.MVVM
+package ir.airport.kotlinapplication.AladhanwithDagger2
 
 import android.util.Log
 import androidx.lifecycle.LiveData
@@ -8,38 +8,31 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import ir.airport.kotlinapplication.pojo.Timings
-import kotlinx.android.synthetic.main.activity_mvvm_view.*
 
+class DaggerViewModelAladhan(private val model: AladhanDaggerModel) :ViewModel() {
+    private val Data = MutableLiveData<Timings>()
+    private val disposable = CompositeDisposable()
 
-class viewModel : ViewModel() {
-    val model=MvvmModel()
-    val disposable=CompositeDisposable()
-    private val responce= MutableLiveData<Timings>()
-    private val error= MutableLiveData<String?>()
+    fun getLiveData(): LiveData<Timings> = Data
 
     fun setOnClick(city:String,country:String){
-        disposable.add(model.setAdhanObservable(city,country)
+        disposable.add(model.setAdhanDaggerObservable(city,country)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({
-                responce.value=it.data.timings
-                Log.d("RESULT",responce.toString())
+                Data.value=it.data.timings
+
+
             },{
-                error.value=it.message
+
                 Log.d("Error",it.message)
 
             }))
     }
-
-    fun getLiveData() : LiveData<Timings> = responce
-
-
 
     fun clearDisposable(){
         disposable.dispose()
     }
 
 
-
-
-    }
+}
