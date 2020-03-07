@@ -1,5 +1,7 @@
 package ir.airport.kotlinapplication.AladhanwithDagger2
 
+import dagger.Module
+import dagger.Provides
 import io.reactivex.Observable
 import ir.airport.kotlinapplication.MVVM.observableInterface
 import ir.airport.kotlinapplication.pojo.AladhanResponseModel
@@ -9,6 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Inject
 
 class AladhanDaggerModel @Inject constructor() {
+
 
     fun setAdhanDagger(): observableDaggerInterface {
         val retrofit = Retrofit.Builder()

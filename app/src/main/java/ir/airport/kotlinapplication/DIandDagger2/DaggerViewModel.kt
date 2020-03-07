@@ -7,7 +7,7 @@ import androidx.lifecycle.ViewModel
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
-
+//dar in class niyaz be method haye class daggermodel darim pass ye instance azash misazim
 class DaggerViewModel(private val model: DaggerModel) :ViewModel() {
     private val Data = MutableLiveData<String>()
     private val disposable = CompositeDisposable()

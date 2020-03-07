@@ -1,9 +1,11 @@
 package ir.airport.kotlinapplication.AladhanwithDagger2
 
+import dagger.Component
 import io.reactivex.Observable
 import ir.airport.kotlinapplication.pojo.AladhanResponseModel
 import retrofit2.http.GET
 import retrofit2.http.Query
+
 
 interface observableDaggerInterface {
     @GET("timingsByCity")
