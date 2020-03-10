@@ -18,7 +18,9 @@ class DaggerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dagger)
+        //ijad instance bekomak Dagger az VMFactoryProvider
         val factory = DaggerFactoryComponent.create().provideVMFactory()
+        //ijad instance az VM
         viewModel = ViewModelProvider(this, factory).get(DaggerViewModel::class.java)
         viewModel.getName()
         btnC.setOnClickListener() {
